@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<!-- saved from url=(0053)file:///Users/daeho/Desktop/generalassemblyfinal.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>About Me - Daeho</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Martel&display=swap" rel="stylesheet">
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      header {
+        font-family: Martel;
+      }
+
+      body {
+        font-family: lato;
+      }
+
+      h1 {
+        font-size: 16px;
+        margin: 0px 0px 0px 15px;
+      }
+
+      subtext {
+        font-size: 13px;
+        position: relative;
+        top: -2px;
+        margin: 0px 0px 0px 15px;
+      }
+
+      subtext2 {
+        font-size: 10px;
+        position: relative;
+        left: 15px;
+        top: -6px
+      }
+
+      header {
+        background-image: url("https://i.imgur.com/J5Vxrjw.jpg?1");
+        background-color: #2c2c2c;
+        background: cover;
+        padding: 30px;
+        text-align: center;
+        font-size: 50px;
+        color: white;
+      }
+
+      hr {
+        position: relative;
+        top: -8px;
+      }
+
+      h2 span {
+        color: white;
+        font: bold 45 lato;
+        letter-spacing: -1px;
+        background: rgb(0, 0, 0);
+        /* fallback color */
+        background: rgba(0, 0, 0, 0.5);
+        padding: 20px;
+      }
+
+
+      section {
+        display: -webkit-flex;
+        display: flex;
+      }
+
+
+      nav {
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        background: white;
+        padding: 20px;
+      }
+
+      p {
+        font-family: lato;
+      }
+
+      h3 {
+        font-family: lato;
+      }
+
+
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+        background: white;
+      }
+
+      article {
+        -webkit-flex: 3;
+        -ms-flex: 3;
+        flex: 3;
+        background-color: #f1f1f1;
+        padding: 0;
+      }
+
+      footer {        
+        padding: 1px;
+        text-align: center;
+        color: white;
+        opacity: .9;
+      }
+
+      .button {
+        background-color: rgba(0, 0, 255, .9);
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        border-radius: 5px 5px 5px 5px;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+
+      .buttonInsta {
+        background-color: #F65151;
+        border: none;
+        color: white;
+        padding: 10px 15px;
+        text-align: center;
+        border-radius: 5px 5px 5px 5px;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+
+      .buttonEmail {
+        background-color: #E72850;
+        border: none;
+        color: white;
+        padding: 10px 15px;
+        text-align: center;
+        border-radius: 5px 5px 5px 5px;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+
+      .buttonPhone {
+        background-color: rgba(247, 202, 24, 1);
+        border: none;
+        color: white;
+        padding: 10px 15px;
+        text-align: center;
+        border-radius: 5px 5px 5px 5px;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+
+      .container {
+        position: relative;
+        width: 33.3333%;
+        overflow: hidden;
+        display: tale-cell;
+      }
+
+      .image {
+        display: table-cell;
+        width: 100%;
+        height: auto;
+        transition: all .4s ease-in;
+        padding: 12px;
+      }
+
+      .overlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: rgba(0, 0, 0, 0.6);
+        color: white;
+        text-align: center;
+        line-height: 24px;
+      }
+
+      .container:hover .overlay {
+        opacity: 1;
+      }
+
+      .container:hover .image {
+        transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+      }
+
+      @media (max-width: 400px) {
+        section {
+          -webkit-flex-direction: column;
+          flex-direction: column;
+        }
+      }
+
+      .instagram-media {
+        padding: 20px;
+      }
+
+      .profPic {
+        width: 8%;
+        border-radius: 100px;
+        border-style: solid;
+        border-color: black;
+        position: relative;
+        right: 20px;
+      }
+
+      body {
+        font-family: "Lato", sans-serif;
+      }
+
+      .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        background-color: rgba(0,0,0,.9);
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 100px;
+      }
+
+      .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: rgba(192, 192, 192, .5);
+        display: block;
+        transition: 0.3s;
+      }
+
+      .sidenav a:hover {
+        color: #f1f1f1;
+      }
+
+      .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+      }
+
+      #main {
+        transition: margin-left .5s;
+        padding: 16px;
+      }
+
+      @media screen and (max-height: 450px) {
+        .sidenav {
+          padding-top: 15px;
+        }
+        .sidenav a {
+          font-size: 24px;
+          font-style: bold;
+        }
+      }
+
+      /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+
+    </style>
+  </head>
+
+  <body>
+
+    <h1>
+      <font size="+2">Hi, I'm
+        <font size="+3" style="color:rgba(0,0,0,.5)">James</font>. Or
+        <font size="+3" style="color:rgba(255,0,0,.7)">Daeho</font>.</font>
+    </h1>
+
+    <subtext>Aspiring software engineer</subtext><br>
+    <subtext2>
+      <font style="color:rgba(0,0,0,.5)">version 1.0</font>
+    </subtext2><br>
+    <hr>
+
+
+    <header>
+      <h2><span>Welcome. <font style="color:rgba(255,0,0,.7)">Glad</font> you stopped by.</span></h2>
+
+    </header>
+    <hr>
+    <section>
+
+
+      <div class="container">
+        <img src="./About Me - Daeho_files/dqeRjHC.jpg" class="image">
+        <div class="overlay">
+          <p><br>
+            <font style="color:rgba(255,0,0,.7)" size="+3">Korea</font><font size="+3">.</font><br><br>After graduating from New York University with a degree in education in 2008, I moved to South Korea as an expat teaching English for five years. It was a wonderful experience that showed me how large the world is how much
+            we can learn from others.</p>
+        </div>
+      </div>
+      <div class="container">
+        <img src="./About Me - Daeho_files/44943927974_c163cb7189_z.jpg" class="image">
+        <div class="overlay">
+          <p><br>
+            <font size="+3">Currently a
+              <font style="color:rgba(255,0,0,.7)">Teacher</font> and
+              <font style="color:rgba(255,0,0,.7)">Aspiring Software Engineer</font>.</font><br><br>I've been teaching the past ten years. I love working with youth, teaching, interacting with and cracking jokes with my students, but I have decided to shift gears to challenge different parts
+            of my brain and grow as a person.</p>
+        </div>
+      </div>
+      <div class="container">
+        <img src="./About Me - Daeho_files/STuNxGF.jpg" class="image">
+        <div class="overlay">
+          <p><br>
+            <font size="+3">Coding and tech will bring out the
+              <font style="color:rgba(255,0,0,.7)">best</font> in me.</font><br>Although teaching is a rewarding and noble occupation, I have not been able to tap into my the technical side of my personality. I have a deep
+            <font style="color:rgba(255,0,0,.7)">passion</font> for learning and am good at systematically teaching myself new things, especially when I really like the subject. Coding is a job I believe I can excel in if I am given the right opportunities.</p>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </section>
+
+
+
+
+
+    <section>
+
+      <div class="container">
+        <img src="./About Me - Daeho_files/EP6hyVO.jpg" class="image">
+        <div class="overlay">
+          <p><br>
+            <font size="+3">Musician.</font><br><br>I love
+            <font style="color:rgba(255,0,0,.7)">music</font> and taught myself guitar as a way to cope with pain. I studied music theory and played live with other musicians in the past. Now I play guitar in my bedroom as a
+            <font style="color:rgba(255,0,0,.7)">creative</font> outlet and stress reliever, but music will always be a part large part of my life.</p>
+        </div>
+      </div>
+
+      <div class="container">
+        <img src="./About Me - Daeho_files/bBfWuNF.png" class="image">
+        <div class="overlay">
+          <p><br>
+          <font style="color:rgba(255,255,0,.7)" size="+3">Mom</font><font size="+3">.</font><br><br> <font style="color:rgba(255,255,0,.7)">Yellow</font> is the color of light and hope. If it weren't for this wonderful woman, I would not be half the person I am today. She gave up everything for our family and unfortunately left us too soon. I couldn't have asked for
+            a better mother. Missing her very much!</p>
+        </div>
+      </div>
+
+      <div class="container">
+        <img src="./About Me - Daeho_files/N9y44bt.jpg" class="image">
+        <div class="overlay">
+          <p><br>
+            <font size="+3">Film and Video Games.
+            </font><br><br>I
+            <font style="color:rgba(255,0,0,.7)">love</font> a good movie, tv show and occasional video game binge as much as anyone else. I was also a big fan of Final Fantasy, Metal Gear Solid, FIFA growing up. Always down for some good entertainment!</p>
+        </div>
+      </div>
+
+    </section>
+
+
+  
+
+
+    <section>
+     <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/BwNlSvSnEG8/" data-instgrm-version="12" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/BwNlSvSnEG8/" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;"> View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div></a> <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://www.instagram.com/p/BwNlSvSnEG8/" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank">Expanding my vocabulary! #pedalboardoftheday #notpedalbored #electricguitar #guitar #guitarist #guitarrista #gearsforworship #worshipguitar #knowyourtone #gottone #guitarsofinstagram #guitarsdaily #기타 #이펙터 #guitaramp #guitar</a></p> <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">A post shared by <a href="https://www.instagram.com/d.aeho/" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px;" target="_blank"> mikohead | daehokim</a> (@d.aeho) on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2019-04-13T22:19:39+00:00">Apr 13, 2019 at 3:19pm PDT</time></p></div></blockquote> <script async src="http://www.instagram.com/embed.js"></script>
+
+
+
+      <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/BwcSMZVH6rR/" data-instgrm-version="12" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/BwcSMZVH6rR/" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;"> View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div></a> <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://www.instagram.com/p/BwcSMZVH6rR/" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank">Practice and hard work are God-given laws of the universe, might as well engage in it! :D #pedalboardoftheday #bluesguitar #notpedalbored #electricguitar #guitar #guitarist #worshipguitar #guitarrista #knowyourtone #gottone #guitarsofinstagram #guitarsdaily #기타 #이펙터 #guitaramp #johnmayer</a></p> <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">A post shared by <a href="https://www.instagram.com/d.aeho/" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px;" target="_blank"> mikohead | daehokim</a> (@d.aeho) on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2019-04-19T15:23:24+00:00">Apr 19, 2019 at 8:23am PDT</time></p></div></blockquote> <script async src="http://www.instagram.com/embed.js"></script>
+
+
+
+
+  <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#" onclick="a4()">A = 4</a>
+        <a href="#" onclick="s3()">S = 3</a>
+        <a href="#" onclick="d2()">D = 2</a>
+        <a href="#" onclick="f1()">F = 1</a>
+        <a href="#" onclick="j1()">J = 1</a>
+        <a href="#" onclick="k2()">K = 2</a>
+        <a href="#" onclick="l3()">L = 3</a>
+        <a href="#" onclick="sColon4()">; = 4</a>
+
+                  <script>
+            function a4() {
+              alert("Pinky");
+            }
+            function s3() {
+              alert("Ring");
+            }
+            function d2() {
+              alert("Middle");
+            }
+            function f1() {
+              alert("Index");
+            }
+            function j1() {
+              alert("Index");
+            }
+            function k2() {
+              alert("Middle");
+            }
+            function l3() {
+              alert("Ring");
+            }
+            function sColon4() {
+              alert("Pinky");
+            }
+
+          </script>
+        </div>
+
+      <div id="main">
+        <font style="color: rgba(0,0,0,.5)" size="+3">Javascript is <br>cool.</font>
+        <p><font style="color: rgba(0,0,0,.5)">Click Here to open the side navigation bar!</p></font>
+        <span style="font-size:28px;cursor:pointer" onclick="openNav()">&#9776; <font size="+3" style="color:rgba(255,0,0,.7)">Here</font></span>
+      </div>
+
+      <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("main").style.marginLeft = "0";
+        }
+
+      </script>
+    </section>
+
+
+
+
+    <footer>
+
+      <nav>
+        <hr><br>
+        <img class="profPic" src="./About Me - Daeho_files/ZxrBBJub.jpg"><br><br>
+        <font size="+3" style="color:rgba(0,0,0,.6)">Contact Me</font>.
+        &lt;&gt;
+          <br>
+          <br>
+
+
+          <button class="button" onclick="window.location.href = &#39;https://www.facebook.com/jamesdaehokim&#39;;">Facebook</button>
+          <button class="buttonInsta" onclick="window.location.href = &#39;https://www.instagram.com/d.aeho&#39;;">Instagram</button>
+          <input type="button" class="buttonEmail" onclick="window.open(&#39;mailto:jamesdaehokim@gmail.com?subject=Get to know Daeho&#39;);" value="E-mail">
+
+          <button class="buttonPhone" onclick="submit()">Phone Number</button>
+
+          <script>
+            function submit() {
+              alert("917-456-xxxx.");
+            }
+
+          </script>
+
+
+      </nav>
+
+    </footer>
+
+
+    
+
+  
+
+
+</body></html>
